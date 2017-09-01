@@ -4,17 +4,9 @@
 
 # Standard library imports
 from __future__ import print_function
-from datetime import datetime
-from functools import wraps
-from json import decoder, dumps, loads
-from os import getenv, path
 
 # Third party library imports
-from flask import Flask, render_template, request, Response, redirect, url_for, send_from_directory
-from urllib3 import disable_warnings
-from requests import get, post
-from requests.exceptions import ConnectionError
-from werkzeug import secure_filename
+from flask import Flask, render_template
 
 APP = Flask(__name__)
 APP.config.from_pyfile('settings.txt')
