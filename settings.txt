@@ -1,0 +1,2 @@
+# Configuration
+STATIC_VAR = 'Hello World'
