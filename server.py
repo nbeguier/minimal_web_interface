@@ -2,10 +2,6 @@
 #-*- coding: utf-8 -*-
 """ minimal web interface """
 
-# Standard library imports
-from __future__ import print_function
-from os import getenv
-
 # Third party library imports
 from flask import Flask, render_template
 
@@ -29,5 +25,4 @@ def page_not_found(_):
     return render_template('404.html'), 404
 
 if __name__ == '__main__':
-    PORT = int(getenv('PORT', 5000))
-    APP.run(debug=True, host='0.0.0.0', port=PORT)
+    APP.run(debug=True, host='0.0.0.0', port=5000)
